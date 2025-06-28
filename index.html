@@ -1,45 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Nyagach Kueth Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
   <style>
-    body {
-      font-family: 'Open Sans', sans-serif;
-      background-color: #f5f1ec;
-      color: #4a3f35;
-      margin: 0;
-      padding: 0;
-    }
-
-    /* Nav Bar Container */
+    /* Dropdown Navigation Styles */
     nav {
-      background-color: #efece7;
-      padding: 12px 24px;
+      position: fixed;
+      top: 12px;
+      right: 24px;
+      z-index: 1000;
       font-family: 'Open Sans', sans-serif;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      position: sticky;
-      top: 0;
-      z-index: 100;
     }
 
-    /* Nav Inner Flex */
-    .nav-container {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-    }
-
-    /* Dropdown Container */
     .dropdown {
       position: relative;
       display: inline-block;
     }
 
-    /* Dropdown Button */
     .dropbtn {
       background-color: #efece7;
       color: #805a3b;
@@ -48,6 +28,8 @@
       border: none;
       cursor: pointer;
       font-family: 'Open Sans', sans-serif;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
     .dropbtn:hover,
@@ -55,18 +37,17 @@
       text-decoration: underline;
     }
 
-    /* Dropdown Content (hidden by default) */
     .dropdown-content {
       display: none;
       position: absolute;
+      right: 0;
       background-color: #f5f1ec;
-      min-width: 140px;
-      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      border-radius: 6px;
       z-index: 1;
-      border-radius: 4px;
     }
 
-    /* Links inside dropdown */
     .dropdown-content a {
       color: #805a3b;
       padding: 12px 16px;
@@ -80,52 +61,79 @@
     }
 
     /* Show dropdown on hover */
-    .dropdown:hover .dropdown-content {
+    .dropdown:hover .dropdown-content,
+    .dropdown:focus-within .dropdown-content {
       display: block;
     }
 
-    /* Regular nav links */
-    .nav-link {
-      margin-right: 20px;
-      color: #805a3b;
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-    .nav-link:hover {
-      text-decoration: underline;
-    }
-
-    /* Main content container */
-    main {
-      padding: 40px 24px;
-      max-width: 900px;
-      margin: auto;
+    /* Optional: Adjust body padding so content doesn’t get hidden under fixed nav */
+    body {
+      padding-top: 60px;
     }
   </style>
 </head>
-
 <body>
+
+  <!-- Navigation Dropdown Menu top right -->
   <nav>
-    <div class="nav-container">
-      <div class="dropdown">
-        <button class="dropbtn">Menu ▼</button>
-        <div class="dropdown-content">
-          <a href="index.html">Home</a>
-          <a href="projects.html">Projects</a>
-          <a href="writing.html">Writing</a>
-          <a href="action.html">Nyagach In Action</a>
-        </div>
+    <div class="dropdown" tabindex="0">
+      <button class="dropbtn">Menu ▼</button>
+      <div class="dropdown-content" role="menu" aria-label="Main Navigation">
+        <a href="index.html" role="menuitem">Home</a>
+        <a href="projects.html" role="menuitem">Projects</a>
+        <a href="writing.html" role="menuitem">Writing</a>
+        <a href="action.html" role="menuitem">Nyagach In Action</a>
       </div>
     </div>
   </nav>
 
-  <main>
-    <!-- Your homepage content here -->
-    <h2>Welcome to My Portfolio</h2>
-    <p>This is the main landing page. You can customize this section with your introduction or other content.</p>
-  </main>
+  <header>
+    <h1>Nyagach Kueth</h1>
+    <p>Multimedia Journalist | Activist | Web Developer in Training</p>
+    <!-- Profile Image -->
+    <img src="https://github.com/NyagachKueth/nyagachkueth.github.io/blob/main/your-image-filename.jpg?raw=true" alt="Nyagach Kueth" style="width:150px; border-radius:50%; margin-top:15px;" />
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>About Me</h2>
+      <p>I’m a Multimedia Journalism major passionate about storytelling, digital equity, and building inclusive tech. Welcome to my portfolio!</p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Responsive Layout Practice:</strong> Currently building a responsive layout for <em>The GingeRoot</em>, a student-led digital magazine for underrepresented voices.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Activism & Organizing</h2>
+      <ul>
+        <li>Founding Member and Board Member, BlackUnderground – Grassroots social justice organizing for marginalized communities.</li>
+        <li>Founder, MN Teen Activist – Led protests and raised $200K for community relief efforts following George Floyd’s murder.</li>
+        <li>Co-founder, The GingeRoot – Student-led platform amplifying minority voices including women, POC, LGBTQIA+, and disabled individuals.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Press & Writing</h2>
+      <ul>
+        <li><a href="URL-to-article-about-you" target="_blank" rel="noopener noreferrer">Article Title About Me</a></li>
+        <li><a href="URL-to-your-article" target="_blank" rel="noopener noreferrer">Your Article Title</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: your-email@example.com</p>
+      <p>LinkedIn & GitHub links coming soon!</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Nyagach Kueth</p>
+  </footer>
+
 </body>
-
 </html>
-
