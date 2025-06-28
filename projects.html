@@ -4,93 +4,86 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projects | Nyagach Kueth</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet" />
   <style>
-    /* Fonts & Colors */
+    /* Body and fonts/colors */
     body {
       font-family: 'Open Sans', sans-serif;
       background-color: #F8F4ED;
       color: #2C2C2C;
-      padding: 40px;
+      padding: 60px 40px 40px 40px; /* top padding accounts for fixed nav */
       line-height: 1.6;
       margin: 0;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     h1 {
       color: #3C3A36;
       font-size: 32px;
-      margin-top: 20px;
+      margin-top: 0;
       margin-bottom: 20px;
+      font-family: 'Poppins', sans-serif;
     }
 
-    /* Navigation Styles */
+    /* Navigation Dropdown Styles (fixed top-right) */
     nav {
-      background-color: #E5DDD3;
-      padding: 12px 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 100;
+      position: fixed;
+      top: 12px;
+      right: 24px;
+      z-index: 1000;
+      font-family: 'Open Sans', sans-serif;
     }
 
-    .nav-container {
-      max-width: 900px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-    }
-
-    /* Dropdown */
     .dropdown {
       position: relative;
       display: inline-block;
     }
 
     .dropbtn {
-      font-family: 'Poppins', sans-serif;
+      background-color: #efece7;
+      color: #805a3b;
+      padding: 8px 16px;
       font-weight: 600;
-      background-color: transparent;
       border: none;
       cursor: pointer;
-      color: #805A3B;
-      font-size: 18px;
-      padding: 8px 12px;
-      transition: color 0.3s ease;
+      font-family: 'Open Sans', sans-serif;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
-    .dropbtn:hover {
-      color: #4C4637;
+    .dropbtn:hover,
+    .dropbtn:focus {
+      text-decoration: underline;
     }
 
     .dropdown-content {
       display: none;
       position: absolute;
-      background-color: #F8F4ED;
-      min-width: 140px;
-      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+      right: 0;
+      background-color: #f5f1ec;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
       border-radius: 6px;
       z-index: 1;
-      margin-top: 6px;
-      padding: 8px 0;
     }
 
     .dropdown-content a {
-      color: #805A3B;
-      padding: 10px 20px;
+      color: #805a3b;
+      padding: 12px 16px;
       text-decoration: none;
       display: block;
       font-weight: 600;
-      font-family: 'Poppins', sans-serif;
-      transition: background-color 0.2s ease;
     }
 
     .dropdown-content a:hover {
-      background-color: #E5DDD3;
-      color: #4C4637;
+      background-color: #d6c6b6;
     }
 
-    .dropdown:hover .dropdown-content {
+    /* Show dropdown on hover or focus */
+    .dropdown:hover .dropdown-content,
+    .dropdown:focus-within .dropdown-content {
       display: block;
     }
 
@@ -102,9 +95,6 @@
       padding: 20px;
       margin-bottom: 20px;
       box-shadow: 0px 2px 5px rgba(0,0,0,0.05);
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
     }
 
     .project h2 {
@@ -120,7 +110,7 @@
     }
 
     a {
-      color: #805A3B;
+      color: #805a3b;
       text-decoration: none;
     }
 
@@ -134,10 +124,7 @@
       margin-top: 30px;
       font-weight: 600;
       font-size: 15px;
-      color: #805A3B;
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
+      color: #805a3b;
       font-family: 'Poppins', sans-serif;
     }
 
@@ -148,16 +135,15 @@
   </style>
 </head>
 <body>
+  <!-- Navigation Dropdown Menu top right -->
   <nav>
-    <div class="nav-container">
-      <div class="dropdown">
-        <button class="dropbtn">Menu ▼</button>
-        <div class="dropdown-content">
-          <a href="index.html">Home</a>
-          <a href="projects.html">Projects</a>
-          <a href="writing.html">Writing</a>
-          <a href="action.html">Nyagach In Action</a>
-        </div>
+    <div class="dropdown" tabindex="0">
+      <button class="dropbtn">Menu ▼</button>
+      <div class="dropdown-content" role="menu" aria-label="Main Navigation">
+        <a href="index.html" role="menuitem">Home</a>
+        <a href="projects.html" role="menuitem">Projects</a>
+        <a href="writing.html" role="menuitem">Writing</a>
+        <a href="action.html" role="menuitem">Nyagach In Action</a>
       </div>
     </div>
   </nav>
