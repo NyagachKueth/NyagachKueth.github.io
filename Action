@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nyagach In Action | Nyagach Kueth</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Nav Bar -->
+  <nav>
+    <div class="nav-container">
+      <div class="dropdown" tabindex="0">
+        <button class="dropbtn">Menu ▼</button>
+        <div class="dropdown-content" role="menu" aria-label="Main Navigation">
+          <a href="index.html" role="menuitem">Home</a>
+          <a href="projects.html" role="menuitem">Projects</a>
+          <a href="writing.html" role="menuitem">Writing</a>
+          <a href="action.html" role="menuitem">Nyagach In Action</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main style="padding: 40px;">
+    <h2>Nyagach In Action</h2>
+    <p>Here are articles and media features about my activism and organizing work:</p>
+    <ul>
+      <li><a href="https://example.com/article-about-me1" target="_blank" rel="noopener noreferrer">Community Organizing Feature One</a></li>
+      <li><a href="https://example.com/article-about-me2" target="_blank" rel="noopener noreferrer">Activism Spotlight Two</a></li>
+      <li><a href="https://example.com/article-about-me3" target="_blank" rel="noopener noreferrer">Interview and Coverage Three</a></li>
+    </ul>
+  </main>
+</body>
+</html>
