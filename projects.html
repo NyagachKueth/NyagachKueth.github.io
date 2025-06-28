@@ -4,137 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projects | Nyagach Kueth</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet" />
-  <style>
-    /* Body and fonts/colors */
-    body {
-      font-family: 'Open Sans', sans-serif;
-      background-color: #F8F4ED;
-      color: #2C2C2C;
-      padding: 60px 40px 40px 40px; /* top padding accounts for fixed nav */
-      line-height: 1.6;
-      margin: 0;
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    h1 {
-      color: #3C3A36;
-      font-size: 32px;
-      margin-top: 0;
-      margin-bottom: 20px;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    /* Navigation Dropdown Styles (fixed top-right) */
-    nav {
-      position: fixed;
-      top: 12px;
-      right: 24px;
-      z-index: 1000;
-      font-family: 'Open Sans', sans-serif;
-    }
-
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-
-    .dropbtn {
-      background-color: #efece7;
-      color: #805a3b;
-      padding: 8px 16px;
-      font-weight: 600;
-      border: none;
-      cursor: pointer;
-      font-family: 'Open Sans', sans-serif;
-      border-radius: 4px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-
-    .dropbtn:hover,
-    .dropbtn:focus {
-      text-decoration: underline;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      right: 0;
-      background-color: #f5f1ec;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-      border-radius: 6px;
-      z-index: 1;
-    }
-
-    .dropdown-content a {
-      color: #805a3b;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-      font-weight: 600;
-    }
-
-    .dropdown-content a:hover {
-      background-color: #d6c6b6;
-    }
-
-    /* Show dropdown on hover or focus */
-    .dropdown:hover .dropdown-content,
-    .dropdown:focus-within .dropdown-content {
-      display: block;
-    }
-
-    /* Projects styling */
-    .project {
-      background-color: #FFFFFF;
-      border: 1px solid #DDD6CE;
-      border-radius: 8px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0px 2px 5px rgba(0,0,0,0.05);
-    }
-
-    .project h2 {
-      margin-top: 0;
-      font-size: 22px;
-      color: #4C4637;
-      font-weight: 600;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    .project p {
-      font-size: 16px;
-    }
-
-    a {
-      color: #805a3b;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* Back link */
-    .back-link {
-      display: inline-block;
-      margin-top: 30px;
-      font-weight: 600;
-      font-size: 15px;
-      color: #805a3b;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    .back-link:hover {
-      text-decoration: underline;
-      color: #4C4637;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <!-- Navigation Dropdown Menu top right -->
   <nav>
     <div class="dropdown" tabindex="0">
@@ -148,23 +21,26 @@
     </div>
   </nav>
 
-  <h1>Projects</h1>
+  <main class="container">
+    <h1>Projects</h1>
 
-  <div class="project">
-    <h2>Responsive Web Layout – The GingeRoot</h2>
-    <p>Designed and helped structure a responsive layout for <strong>The GingeRoot</strong>, a digital-first publication platforming underrepresented voices including BIPOC, LGBTQIA+, and disabled students. I focused on mobile-first design principles and user accessibility.</p>
-  </div>
+    <div class="project">
+      <h2>Responsive Web Layout – The GingeRoot</h2>
+      <p>Designed and helped structure a responsive layout for <strong>The GingeRoot</strong>, a digital-first publication platforming underrepresented voices including BIPOC, LGBTQIA+, and disabled students. I focused on mobile-first design principles and user accessibility.</p>
+    </div>
 
-  <div class="project">
-    <h2>Article Archive & Personal Journalism</h2>
-    <p>Curated and linked articles from my activism and student journalism work, including coverage of social justice events, organizing efforts, and commentary on cultural media. <a href="#">(Link coming soon)</a></p>
-  </div>
+    <div class="project">
+      <h2>Article Archive & Personal Journalism</h2>
+      <p>Curated and linked articles from my activism and student journalism work, including coverage of social justice events, organizing efforts, and commentary on cultural media. <a href="#">(Link coming soon)</a></p>
+    </div>
 
-  <div class="project">
-    <h2>GitHub Setup + Portfolio Site</h2>
-    <p>Created and deployed my first developer portfolio using GitHub Pages. Practiced HTML/CSS basics, learned version control, and structured my work with accessibility and simplicity in mind.</p>
-  </div>
+    <div class="project">
+      <h2>GitHub Setup + Portfolio Site</h2>
+      <p>Created and deployed my first developer portfolio using GitHub Pages. Practiced HTML/CSS basics, learned version control, and structured my work with accessibility and simplicity in mind.</p>
+    </div>
 
-  <a href="index.html" class="back-link">← Back to Home</a>
+    <a href="index.html" class="back-link">← Back to Home</a>
+  </main>
+
 </body>
 </html>
