@@ -4,83 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Writing | Nyagach Kueth</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
-  <style>
-    /* Dropdown Navigation Styles */
-    nav {
-      position: fixed;
-      top: 12px;
-      right: 24px;
-      z-index: 1000;
-      font-family: 'Open Sans', sans-serif;
-    }
-
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-
-    .dropbtn {
-      background-color: #efece7;
-      color: #805a3b;
-      padding: 8px 16px;
-      font-weight: 600;
-      border: none;
-      cursor: pointer;
-      font-family: 'Open Sans', sans-serif;
-      border-radius: 4px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-
-    .dropbtn:hover,
-    .dropbtn:focus {
-      text-decoration: underline;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      right: 0;
-      background-color: #f5f1ec;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-      border-radius: 6px;
-      z-index: 1;
-    }
-
-    .dropdown-content a {
-      color: #805a3b;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-      font-weight: 600;
-    }
-
-    .dropdown-content a:hover {
-      background-color: #d6c6b6;
-    }
-
-    /* Show dropdown on hover */
-    .dropdown:hover .dropdown-content,
-    .dropdown:focus-within .dropdown-content {
-      display: block;
-    }
-
-    /* Optional: Adjust body padding so content doesn’t get hidden under fixed nav */
-    body {
-      padding-top: 60px;
-      font-family: 'Open Sans', sans-serif;
-      background-color: #FAF8F3;
-      color: #4A3F35;
-      margin: 0;
-    }
-
-    main {
-      padding: 40px;
-      max-width: 700px;
-      margin: auto;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -97,7 +21,7 @@
     </div>
   </nav>
 
-  <main>
+  <main class="container">
     <h2>My Writing</h2>
     <p>Below are some selected articles and pieces I’ve written or contributed to:</p>
     <ul>
