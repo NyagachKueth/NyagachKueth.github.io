@@ -1,25 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projects | Nyagach Kueth</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet" />
   <style>
+    /* Fonts & Colors */
     body {
       font-family: 'Open Sans', sans-serif;
       background-color: #F8F4ED;
       color: #2C2C2C;
       padding: 40px;
       line-height: 1.6;
+      margin: 0;
     }
 
     h1 {
       color: #3C3A36;
       font-size: 32px;
-      margin-bottom: 10px;
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
 
+    /* Navigation Styles */
+    nav {
+      background-color: #E5DDD3;
+      padding: 12px 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-container {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    /* Dropdown */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropbtn {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      color: #805A3B;
+      font-size: 18px;
+      padding: 8px 12px;
+      transition: color 0.3s ease;
+    }
+
+    .dropbtn:hover {
+      color: #4C4637;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #F8F4ED;
+      min-width: 140px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+      border-radius: 6px;
+      z-index: 1;
+      margin-top: 6px;
+      padding: 8px 0;
+    }
+
+    .dropdown-content a {
+      color: #805A3B;
+      padding: 10px 20px;
+      text-decoration: none;
+      display: block;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      transition: background-color 0.2s ease;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #E5DDD3;
+      color: #4C4637;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Projects styling */
     .project {
       background-color: #FFFFFF;
       border: 1px solid #DDD6CE;
@@ -27,12 +102,17 @@
       padding: 20px;
       margin-bottom: 20px;
       box-shadow: 0px 2px 5px rgba(0,0,0,0.05);
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .project h2 {
       margin-top: 0;
       font-size: 22px;
       color: #4C4637;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
     }
 
     .project p {
@@ -48,15 +128,40 @@
       text-decoration: underline;
     }
 
+    /* Back link */
     .back-link {
       display: inline-block;
       margin-top: 30px;
-      font-weight: bold;
+      font-weight: 600;
       font-size: 15px;
+      color: #805A3B;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+      color: #4C4637;
     }
   </style>
 </head>
 <body>
+  <nav>
+    <div class="nav-container">
+      <div class="dropdown">
+        <button class="dropbtn">Menu ▼</button>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="writing.html">Writing</a>
+          <a href="action.html">Nyagach In Action</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
   <h1>Projects</h1>
 
   <div class="project">
@@ -77,4 +182,3 @@
   <a href="index.html" class="back-link">← Back to Home</a>
 </body>
 </html>
-Add Projects page with responsive layout and sample projects
