@@ -15,101 +15,117 @@
       padding: 0;
     }
 
-    <style>
-  /* Nav Bar Container */
-  nav {
-    background-color: #efece7;
-    padding: 12px 24px;
-    font-family: 'Open Sans', sans-serif;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
+    /* Nav Bar Container */
+    nav {
+      background-color: #efece7;
+      padding: 12px 24px;
+      font-family: 'Open Sans', sans-serif;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
 
-  /* Nav Inner Flex */
-  .nav-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
+    /* Nav Inner Flex */
+    .nav-container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
 
-  /* Dropdown Container */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
+    /* Dropdown Container */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
 
-  /* Dropdown Button */
-  .dropbtn {
-    background-color: #efece7;
-    color: #805a3b;
-    padding: 8px 16px;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-    font-family: 'Open Sans', sans-serif;
-  }
+    /* Dropdown Button */
+    .dropbtn {
+      background-color: #efece7;
+      color: #805a3b;
+      padding: 8px 16px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      font-family: 'Open Sans', sans-serif;
+    }
 
-  .dropbtn:hover, .dropbtn:focus {
-    text-decoration: underline;
-  }
+    .dropbtn:hover,
+    .dropbtn:focus {
+      text-decoration: underline;
+    }
 
-  /* Dropdown Content (hidden by default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f5f1ec;
-    min-width: 140px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-    z-index: 1;
-    border-radius: 4px;
-  }
+    /* Dropdown Content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f5f1ec;
+      min-width: 140px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      border-radius: 4px;
+    }
 
-  /* Links inside dropdown */
-  .dropdown-content a {
-    color: #805a3b;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    font-weight: 600;
-  }
+    /* Links inside dropdown */
+    .dropdown-content a {
+      color: #805a3b;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-weight: 600;
+    }
 
-  .dropdown-content a:hover {
-    background-color: #d6c6b6;
-  }
+    .dropdown-content a:hover {
+      background-color: #d6c6b6;
+    }
 
-  /* Show dropdown on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+    /* Show dropdown on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
 
-  /* Regular nav links */
-  .nav-link {
-    margin-right: 20px;
-    color: #805a3b;
-    font-weight: 600;
-    text-decoration: none;
-  }
+    /* Regular nav links */
+    .nav-link {
+      margin-right: 20px;
+      color: #805a3b;
+      font-weight: 600;
+      text-decoration: none;
+    }
 
-  .nav-link:hover {
-    text-decoration: underline;
-  }
-</style>
+    .nav-link:hover {
+      text-decoration: underline;
+    }
 
-<nav>
-  <div class="nav-container">
-    <div class="dropdown">
-      <button class="dropbtn">Menu ▼</button>
-      <div class="dropdown-content">
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="writing.html">Writing</a>
-        <a href="action.html">Nyagach In Action</a>
+    /* Main content container */
+    main {
+      padding: 40px 24px;
+      max-width: 900px;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="dropdown">
+        <button class="dropbtn">Menu ▼</button>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="writing.html">Writing</a>
+          <a href="action.html">Nyagach In Action</a>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-    <div>
-      <a href="index.html">Home
+  <main>
+    <!-- Your homepage content here -->
+    <h2>Welcome to My Portfolio</h2>
+    <p>This is the main landing page. You can customize this section with your introduction or other content.</p>
+  </main>
+</body>
+
+</html>
+
